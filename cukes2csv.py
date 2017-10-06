@@ -17,8 +17,8 @@ def extract_tests(cukes):
                 tests.append(test)
     return tests
 
-def write_csv(dicts, delimiter=','):
-    with open('tests.csv', 'w') as f:
+def write_csv(filename, dicts, delimiter=','):
+    with open(filename, 'w') as f:
         w = csv.writer(f, delimiter=delimiter)
         w.writerow(header(dicts))
         for d in dicts:
@@ -41,7 +41,10 @@ def main():
 
     tests = extract_tests(cukes) 
     print_csv(tests, ';')
-    write_csv(tests, ';')
+    filename = 'tests.csv'
+    write_csv(filename, tests, ';')
 
+    print('Done!')
+    print('open ./' + filename)
 
 main()
