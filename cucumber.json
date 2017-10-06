@@ -1,0 +1,3321 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "A new default customer with $0.00 balance is created and logged in API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.00",
+                  "offset": 29
+                }
+              ],
+              "location": "CustomerSteps.java:74"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "PA Feed: Create Horse Racing Event",
+        "description": "",
+        "id": "racing-event-feeds;\u003ctype\u003e-feed:-create-\u003ccategory\u003e-event;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I feed \"PA\" RabbitMQ with Event message based on \"feeds/pa-hr-chester.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PA",
+                  "offset": 8
+                },
+                {
+                  "val": "feeds/pa-hr-chester.json",
+                  "offset": 50
+                }
+              ],
+              "location": "FeedSteps.java:60"
+            },
+            "matchedColumns": [
+              0,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "WagerPlayer receives the Event in \"Horse Racing\"-\"CHESTER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Horse Racing",
+                  "offset": 35
+                },
+                {
+                  "val": "CHESTER",
+                  "offset": 50
+                }
+              ],
+              "location": "FeedSteps.java:147"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@redbook"
+          },
+          {
+            "line": 7,
+            "name": "@smoke"
+          },
+          {
+            "line": 1,
+            "name": "@feed"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "A new default customer with $0.00 balance is created and logged in API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.00",
+                  "offset": 29
+                }
+              ],
+              "location": "CustomerSteps.java:74"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "PA Feed: Create Greyhound Racing Event",
+        "description": "",
+        "id": "racing-event-feeds;\u003ctype\u003e-feed:-create-\u003ccategory\u003e-event;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I feed \"PA\" RabbitMQ with Event message based on \"feeds/pa-gh-hove.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PA",
+                  "offset": 8
+                },
+                {
+                  "val": "feeds/pa-gh-hove.json",
+                  "offset": 50
+                }
+              ],
+              "location": "FeedSteps.java:60"
+            },
+            "matchedColumns": [
+              0,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "WagerPlayer receives the Event in \"Greyhound Racing\"-\"HOVE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Greyhound Racing",
+                  "offset": 35
+                },
+                {
+                  "val": "HOVE",
+                  "offset": 54
+                }
+              ],
+              "location": "FeedSteps.java:147"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@redbook"
+          },
+          {
+            "line": 7,
+            "name": "@smoke"
+          },
+          {
+            "line": 1,
+            "name": "@feed"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "A new default customer with $0.00 balance is created and logged in API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.00",
+                  "offset": 29
+                }
+              ],
+              "location": "CustomerSteps.java:74"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "WIFT Feed: Create Horse Racing Event",
+        "description": "",
+        "id": "racing-event-feeds;\u003ctype\u003e-feed:-create-\u003ccategory\u003e-event;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I feed \"WIFT\" RabbitMQ with Event message based on \"feeds/wift-hr-bendigo.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "WIFT",
+                  "offset": 8
+                },
+                {
+                  "val": "feeds/wift-hr-bendigo.json",
+                  "offset": 52
+                }
+              ],
+              "location": "FeedSteps.java:60"
+            },
+            "matchedColumns": [
+              0,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "WagerPlayer receives the Event in \"Horse Racing\"-\"BENDIGO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Horse Racing",
+                  "offset": 35
+                },
+                {
+                  "val": "BENDIGO",
+                  "offset": 50
+                }
+              ],
+              "location": "FeedSteps.java:147"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@redbook"
+          },
+          {
+            "line": 7,
+            "name": "@smoke"
+          },
+          {
+            "line": 1,
+            "name": "@feed"
+          }
+        ]
+      }
+    ],
+    "name": "Racing Event Feeds",
+    "description": "",
+    "id": "racing-event-feeds",
+    "keyword": "Feature",
+    "uri": "FeedRacing.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@redbook"
+      },
+      {
+        "line": 1,
+        "name": "@feed"
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "A new default customer with $0.00 balance is created and logged in API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.00",
+                  "offset": 29
+                }
+              ],
+              "location": "CustomerSteps.java:74"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Gearman Feed: event arrives",
+        "description": "",
+        "id": "sporting-solutions-event-feeds;gearman-feed:-event-arrives;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I feed Gearman with Event message based on \"feeds/gearman-football-npl-women-vic.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "feeds/gearman-football-npl-women-vic.json",
+                  "offset": 44
+                }
+              ],
+              "location": "FeedSteps.java:104"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "WagerPlayer receives the Event in \"Football\"-\"NPL Women - Victoria\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Football",
+                  "offset": 35
+                },
+                {
+                  "val": "NPL Women - Victoria",
+                  "offset": 46
+                }
+              ],
+              "location": "FeedSteps.java:147"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the received Event status is \"held\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "held",
+                  "offset": 30
+                }
+              ],
+              "location": "FeedSteps.java:204"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@redbook"
+          },
+          {
+            "line": 8,
+            "name": "@wip"
+          },
+          {
+            "line": 1,
+            "name": "@feed"
+          },
+          {
+            "line": 1,
+            "name": "@gearman-feed"
+          }
+        ]
+      }
+    ],
+    "name": "Sporting Solutions Event Feeds",
+    "description": "",
+    "id": "sporting-solutions-event-feeds",
+    "keyword": "Feature",
+    "uri": "FeedSports.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@redbook"
+      },
+      {
+        "line": 1,
+        "name": "@feed"
+      },
+      {
+        "line": 1,
+        "name": "@gearman-feed"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "API Login",
+        "description": "",
+        "id": "login-into-wagerplayer;api-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "A new default customer with $100.00 balance is created and logged in API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100.00",
+                  "offset": 29
+                }
+              ],
+              "location": "CustomerSteps.java:74"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "UI Login with valid credentials",
+        "description": "",
+        "id": "login-into-wagerplayer;ui-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I login with valid username and password",
+            "match": {
+              "location": "LoginSteps.java:13"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "homepage is displayed",
+            "match": {
+              "location": "LoginSteps.java:19"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "UI Login with invalid credentials",
+        "description": "",
+        "id": "login-into-wagerplayer;ui-login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I login with invalid username and password",
+            "match": {
+              "location": "LoginSteps.java:23"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I see \"Invalid user\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid user",
+                  "offset": 7
+                }
+              ],
+              "location": "LoginSteps.java:29"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login into WagerPlayer",
+    "description": "",
+    "id": "login-into-wagerplayer",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@login"
+      },
+      {
+        "line": 1,
+        "name": "@smoke"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "A new default customer with $100.00 balance is created and logged in API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100.00",
+                  "offset": 29
+                }
+              ],
+              "location": "CustomerSteps.java:74"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I am logged into WP UI and on Home Page",
+            "match": {
+              "location": "LoginSteps.java:33"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Single Win Bet: Horse Racing | Luxbook DVP Fixed | Punter Win",
+        "description": "",
+        "id": "single-bets;single-win-bet:-\u003ccategory\u003e-|-\u003cproduct\u003e-|-punter-\u003coutcome\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I enter specifics category \"Horse Racing\" and subcategory \"WOLVERHAMPTON\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Horse Racing",
+                  "offset": 28
+                },
+                {
+                  "val": "WOLVERHAMPTON",
+                  "offset": 59
+                }
+              ],
+              "location": "CreateEventSteps.java:39"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I create a default Racing event with details",
+            "match": {
+              "location": "CreateEventSteps.java:135"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "runners",
+                  "Runner01, Runner02, Runner03, Runner04, Runner05"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "prices",
+                  "1.10, 2.20, 3.30, 4.40, 5.50"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I enable \"Luxbook DVP Fixed\" product settings",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Luxbook DVP Fixed",
+                  "offset": 10
+                }
+              ],
+              "location": "CreateEventSteps.java:90"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "Win"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Win"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I update fixed win prices \"4.20, 4.10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4.20, 4.10",
+                  "offset": 27
+                }
+              ],
+              "location": "CreateEventSteps.java:167"
+            },
+            "matchedColumns": [
+              9
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I place a single Racing \"Win\" bet on the runner \"Runner01\" for $2.50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Win",
+                  "offset": 25
+                },
+                {
+                  "val": "Runner01",
+                  "offset": 49
+                },
+                {
+                  "val": "2.50",
+                  "offset": 64
+                }
+              ],
+              "location": "BetAPISteps.java:148"
+            },
+            "matchedColumns": [
+              4,
+              5,
+              6
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "customer balance after bet is decreased by $2.50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2.50",
+                  "offset": 44
+                }
+              ],
+              "location": "BetAPISteps.java:302"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I result/settle created event race with winners \"Runner01, Runner02\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Runner01, Runner02",
+                  "offset": 49
+                }
+              ],
+              "location": "CreateEventSteps.java:254"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "customer balance since last bet is increased by $10.50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10.50",
+                  "offset": 49
+                }
+              ],
+              "location": "BetAPISteps.java:307"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@single-bet"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "A new default customer with $100.00 balance is created and logged in API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100.00",
+                  "offset": 29
+                }
+              ],
+              "location": "CustomerSteps.java:74"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I am logged into WP UI and on Home Page",
+            "match": {
+              "location": "LoginSteps.java:33"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Single Win Bet: Horse Racing | Luxbook DVP Fixed | Punter Loss",
+        "description": "",
+        "id": "single-bets;single-win-bet:-\u003ccategory\u003e-|-\u003cproduct\u003e-|-punter-\u003coutcome\u003e;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I enter specifics category \"Horse Racing\" and subcategory \"WOLVERHAMPTON\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Horse Racing",
+                  "offset": 28
+                },
+                {
+                  "val": "WOLVERHAMPTON",
+                  "offset": 59
+                }
+              ],
+              "location": "CreateEventSteps.java:39"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I create a default Racing event with details",
+            "match": {
+              "location": "CreateEventSteps.java:135"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "runners",
+                  "Runner01, Runner02, Runner03, Runner04, Runner05"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "prices",
+                  "1.10, 2.20, 3.30, 4.40, 5.50"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I enable \"Luxbook DVP Fixed\" product settings",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Luxbook DVP Fixed",
+                  "offset": 10
+                }
+              ],
+              "location": "CreateEventSteps.java:90"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "Win"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Win"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I update fixed win prices \"4.20, 4.10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4.20, 4.10",
+                  "offset": 27
+                }
+              ],
+              "location": "CreateEventSteps.java:167"
+            },
+            "matchedColumns": [
+              9
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I place a single Racing \"Win\" bet on the runner \"Runner02\" for $3.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Win",
+                  "offset": 25
+                },
+                {
+                  "val": "Runner02",
+                  "offset": 49
+                },
+                {
+                  "val": "3.00",
+                  "offset": 64
+                }
+              ],
+              "location": "BetAPISteps.java:148"
+            },
+            "matchedColumns": [
+              4,
+              5,
+              6
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "customer balance after bet is decreased by $3.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3.00",
+                  "offset": 44
+                }
+              ],
+              "location": "BetAPISteps.java:302"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I result/settle created event race with winners \"Runner01, Runner02\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Runner01, Runner02",
+                  "offset": 49
+                }
+              ],
+              "location": "CreateEventSteps.java:254"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "customer balance since last bet is increased by $0.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0.00",
+                  "offset": 49
+                }
+              ],
+              "location": "BetAPISteps.java:307"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@single-bet"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "A new default customer with $100.00 balance is created and logged in API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100.00",
+                  "offset": 29
+                }
+              ],
+              "location": "CustomerSteps.java:74"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I am logged into WP UI and on Home Page",
+            "match": {
+              "location": "LoginSteps.java:33"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 66,
+        "name": "Single EachWay Bet: Horse Racing | Luxbook DVP Fixed | Punter Win finishing 1st",
+        "description": "",
+        "id": "single-bets;single-\u003cbettype\u003e-bet:-\u003ccategory\u003e-|-\u003cproduct\u003e-|-punter-\u003coutcome\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I enter specifics category \"Horse Racing\" and subcategory \"WOLVERHAMPTON\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Horse Racing",
+                  "offset": 28
+                },
+                {
+                  "val": "WOLVERHAMPTON",
+                  "offset": 59
+                }
+              ],
+              "location": "CreateEventSteps.java:39"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I create a default Racing event with details",
+            "match": {
+              "location": "CreateEventSteps.java:135"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "runners",
+                  "Runner01, Runner02, Runner03, Runner04, Runner05"
+                ],
+                "line": 38
+              },
+              {
+                "cells": [
+                  "prices",
+                  "1.10, 2.20, 3.30, 4.40, 5.50"
+                ],
+                "line": 39
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "I enable \"Luxbook DVP Fixed\" product settings",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Luxbook DVP Fixed",
+                  "offset": 10
+                }
+              ],
+              "location": "CreateEventSteps.java:90"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "Win"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "Place"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "EW"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Win"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Place"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Display Price",
+                  "Win"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Display Price",
+                  "Place"
+                ],
+                "line": 47
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "I enter market details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "enter",
+                  "offset": 2
+                }
+              ],
+              "location": "CreateEventSteps.java:99"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Market Status",
+                  "Live"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "E/W",
+                  "yes"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "Bets Allowed",
+                  "WIN Yes"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "Bets Allowed Place",
+                  "PLACE Fraction"
+                ],
+                "line": 52
+              },
+              {
+                "cells": [
+                  "Place Fraction",
+                  "1/4"
+                ],
+                "line": 53
+              },
+              {
+                "cells": [
+                  "No of Places",
+                  "3"
+                ],
+                "line": 54
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "I update fixed win prices \"10.00, 8.00, 7.00\" and place prices \"3.25, 2.75, 2.25\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10.00, 8.00, 7.00",
+                  "offset": 27
+                },
+                {
+                  "val": "3.25, 2.75, 2.25",
+                  "offset": 64
+                }
+              ],
+              "location": "CreateEventSteps.java:201"
+            },
+            "matchedColumns": [
+              9,
+              10
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "I place a single Racing \"EachWay\" bet on the runner \"Runner01\" for $2.50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "EachWay",
+                  "offset": 25
+                },
+                {
+                  "val": "Runner01",
+                  "offset": 53
+                },
+                {
+                  "val": "2.50",
+                  "offset": 68
+                }
+              ],
+              "location": "BetAPISteps.java:148"
+            },
+            "matchedColumns": [
+              4,
+              5,
+              6
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "customer balance after bet is decreased by $5.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5.00",
+                  "offset": 44
+                }
+              ],
+              "location": "BetAPISteps.java:302"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "I result/settle created event race with winners \"Runner01, Runner02, Runner03\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Runner01, Runner02, Runner03",
+                  "offset": 49
+                }
+              ],
+              "location": "CreateEventSteps.java:254"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "customer balance since last bet is increased by $33.13",
+            "match": {
+              "arguments": [
+                {
+                  "val": "33.13",
+                  "offset": 49
+                }
+              ],
+              "location": "BetAPISteps.java:307"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@single-bet"
+          }
+        ]
+      }
+    ],
+    "name": "Single Bets",
+    "description": "",
+    "id": "single-bets",
+    "keyword": "Feature",
+    "uri": "SingleBets.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@single-bet"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I am logged into WP UI and on Home Page",
+            "match": {
+              "location": "LoginSteps.java:33"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 87,
+        "name": "Create Event: Horse Racing | WOLVERHAMPTON | 8 runners",
+        "description": "",
+        "id": "create-sunbets-events-in-wagerplayer-ui;create-event:-\u003ccategory\u003e-|-\u003csubcategory\u003e-|-\u003cnumofrunners\u003e-runners;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I enter specifics category \"Horse Racing\" and subcategory \"WOLVERHAMPTON\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Horse Racing",
+                  "offset": 28
+                },
+                {
+                  "val": "WOLVERHAMPTON",
+                  "offset": 59
+                }
+              ],
+              "location": "CreateEventSteps.java:39"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I see New Event page is loaded",
+            "match": {
+              "location": "CreateEventSteps.java:127"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I enter event details with 8 runners, current \u0027show time\u0027 and \u0027event date/time\u0027 in 30 minutes with data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 27
+                },
+                {
+                  "val": "30",
+                  "offset": 83
+                }
+              ],
+              "location": "CreateEventSteps.java:57"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "base name",
+                  "1: TEST RACE"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "bet in run type",
+                  "Both Allowed"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "create market",
+                  "Racing Live"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I see Create Market page",
+            "match": {
+              "location": "CreateEventSteps.java:72"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I can see success status with message \"Event Created\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Event Created",
+                  "offset": 39
+                }
+              ],
+              "location": "CreateEventSteps.java:123"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I enter random prices for racing event matching 8 participants",
+            "match": {
+              "arguments": [
+                {
+                  "val": "racing",
+                  "offset": 26
+                },
+                {
+                  "val": "8",
+                  "offset": 48
+                }
+              ],
+              "location": "CreateEventSteps.java:76"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I can see success status with message \"Market Created\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Market Created",
+                  "offset": 39
+                }
+              ],
+              "location": "CreateEventSteps.java:123"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I update race number to \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 25
+                }
+              ],
+              "location": "CreateEventSteps.java:82"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I enable \"Luxbook DVP Fixed\" product settings",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Luxbook DVP Fixed",
+                  "offset": 10
+                }
+              ],
+              "location": "CreateEventSteps.java:90"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Fluc"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Display Price",
+                  "Win"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Display Price",
+                  "Place"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Single",
+                  "Win"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Single",
+                  "Place"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Base",
+                  "Win"
+                ],
+                "line": 29
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Final Leg Multi",
+                  "Win"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Final Leg Multi",
+                  "Place"
+                ],
+                "line": 31
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Multi",
+                  "Win"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Multi",
+                  "Place"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Betback",
+                  "Win"
+                ],
+                "line": 34
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Betback",
+                  "Place"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Cash Out",
+                  "Win"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Cash Out",
+                  "Place"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Cash Out",
+                  "Multi Win"
+                ],
+                "line": 38
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Cash Out",
+                  "Multi Place"
+                ],
+                "line": 39
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "I enable \"SP\" product settings",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SP",
+                  "offset": 10
+                }
+              ],
+              "location": "CreateEventSteps.java:90"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Betting",
+                  "Enabled",
+                  "On"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enabled",
+                  "Auto"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Win"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Place"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "Win"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "Place"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "EW"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Column",
+                  "Win"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Column",
+                  "Place"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Column",
+                  "EW"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Multi",
+                  "Win"
+                ],
+                "line": 52
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Multi",
+                  "Place"
+                ],
+                "line": 53
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Multi",
+                  "EW"
+                ],
+                "line": 54
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Disp. Result",
+                  "Win"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Disp. Result",
+                  "Place"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Display Price",
+                  "Win"
+                ],
+                "line": 57
+              },
+              {
+                "cells": [
+                  "Liability",
+                  "Display Price",
+                  "Place"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "Defaults",
+                  "Display",
+                  "Web"
+                ],
+                "line": 59
+              },
+              {
+                "cells": [
+                  "Defaults",
+                  "Display",
+                  "F2"
+                ],
+                "line": 60
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "I enable \"Forecast Fixed\" product settings",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Forecast Fixed",
+                  "offset": 10
+                }
+              ],
+              "location": "CreateEventSteps.java:90"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Defaults",
+                  "Display",
+                  "Web"
+                ],
+                "line": 63
+              },
+              {
+                "cells": [
+                  "Defaults",
+                  "Display",
+                  "F2"
+                ],
+                "line": 64
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "I enable \"Tricast SP\" product settings",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tricast SP",
+                  "offset": 10
+                }
+              ],
+              "location": "CreateEventSteps.java:90"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Betting",
+                  "Enabled",
+                  "On"
+                ],
+                "line": 67
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enabled",
+                  "Auto"
+                ],
+                "line": 68
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Win"
+                ],
+                "line": 69
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Place"
+                ],
+                "line": 70
+              },
+              {
+                "cells": [
+                  "Defaults",
+                  "Display",
+                  "Web"
+                ],
+                "line": 71
+              },
+              {
+                "cells": [
+                  "Defaults",
+                  "Display",
+                  "F2"
+                ],
+                "line": 72
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "I enter market details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "enter",
+                  "offset": 2
+                }
+              ],
+              "location": "CreateEventSteps.java:99"
+            },
+            "matchedColumns": [
+              4,
+              5
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Market Status",
+                  "Live"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "Bets Allowed",
+                  "WIN Yes"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "Bets Allowed Place",
+                  "PLACE Fraction"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "Place Fraction",
+                  "1/5"
+                ],
+                "line": 78
+              },
+              {
+                "cells": [
+                  "No of Places",
+                  "3"
+                ],
+                "line": 79
+              },
+              {
+                "cells": [
+                  "E/W",
+                  "yes"
+                ],
+                "line": 80
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 81,
+            "name": "I can see success status with message \"Market display updated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Market display updated",
+                  "offset": 39
+                }
+              ],
+              "location": "CreateEventSteps.java:123"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "event status is \"L\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "L",
+                  "offset": 17
+                }
+              ],
+              "location": "CreateEventSteps.java:131"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@redbook"
+          },
+          {
+            "line": 1,
+            "name": "@ui"
+          },
+          {
+            "line": 1,
+            "name": "@create-event"
+          }
+        ]
+      }
+    ],
+    "name": "Create Sunbets Events in WagerPlayer UI",
+    "description": "",
+    "id": "create-sunbets-events-in-wagerplayer-ui",
+    "keyword": "Feature",
+    "uri": "redbook/CreateEvent.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@redbook"
+      },
+      {
+        "line": 1,
+        "name": "@ui"
+      },
+      {
+        "line": 1,
+        "name": "@create-event"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "A new default customer with $100.00 balance is created and logged in API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100.00",
+                  "offset": 29
+                }
+              ],
+              "location": "CustomerSteps.java:74"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I am logged into WP UI and on Home Page",
+            "match": {
+              "location": "LoginSteps.java:33"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Horse Race Exotic bets",
+        "description": "",
+        "id": "placing-and-settling-exotic-bets-for-a-single-event;horse-race-exotic-bets;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I enter specifics category \"Horse Racing\" and subcategory \"WOLVERHAMPTON\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Horse Racing",
+                  "offset": 28
+                },
+                {
+                  "val": "WOLVERHAMPTON",
+                  "offset": 59
+                }
+              ],
+              "location": "CreateEventSteps.java:39"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I create a default Racing event with details",
+            "match": {
+              "location": "CreateEventSteps.java:135"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "runners",
+                  "Runner01, Runner02, Runner03, Runner04, Runner05, Runner06, Runner07, Runner08"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "prices",
+                  "1.10, 2.20, 1.20, 2.40, 1.30, 2.60, 1.40, 2.80"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I enable \"Forecast SP\" product settings",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Forecast SP",
+                  "offset": 10
+                }
+              ],
+              "location": "CreateEventSteps.java:90"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Win"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Place"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I place an exotic \"Exotic\" bet on the runners \"Runner01, Runner02\" for $2.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Exotic",
+                  "offset": 19
+                },
+                {
+                  "val": "Runner01, Runner02",
+                  "offset": 47
+                },
+                {
+                  "val": "2.00",
+                  "offset": 72
+                }
+              ],
+              "location": "BetAPISteps.java:192"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "customer balance after bet is decreased by $2.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2.00",
+                  "offset": 44
+                }
+              ],
+              "location": "BetAPISteps.java:302"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I result event with winners \"Runner01, Runner02\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Runner01, Runner02",
+                  "offset": 29
+                }
+              ],
+              "location": "CreateEventSteps.java:249"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I settle race with Exotic prices \"5.20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5.20",
+                  "offset": 34
+                }
+              ],
+              "location": "CreateEventSteps.java:289"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "customer balance since last bet is increased by $10.40",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10.40",
+                  "offset": 49
+                }
+              ],
+              "location": "BetAPISteps.java:307"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@redbook"
+          },
+          {
+            "line": 1,
+            "name": "@exotic-bets"
+          }
+        ]
+      }
+    ],
+    "name": "Placing and Settling Exotic Bets for a Single Event",
+    "description": "",
+    "id": "placing-and-settling-exotic-bets-for-a-single-event",
+    "keyword": "Feature",
+    "uri": "redbook/ExoticBets.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@exotic-bets"
+      },
+      {
+        "line": 1,
+        "name": "@redbook"
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "A new default customer with $100.00 balance is created and logged in API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100.00",
+                  "offset": 29
+                }
+              ],
+              "location": "CustomerSteps.java:74"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I am logged into WP UI and on Home Page",
+            "match": {
+              "location": "LoginSteps.java:33"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Horse Race several Single bets",
+        "description": "",
+        "id": "placing-and-settling-several-single-bets-on-the-same-event;horse-race-several-single-bets",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I enter specifics category \"Horse Racing\" and subcategory \"WOLVERHAMPTON\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Horse Racing",
+                  "offset": 28
+                },
+                {
+                  "val": "WOLVERHAMPTON",
+                  "offset": 59
+                }
+              ],
+              "location": "CreateEventSteps.java:39"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I create a default Racing event with details",
+            "match": {
+              "location": "CreateEventSteps.java:135"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "runners",
+                  "Runner01, Runner02, Runner03, Runner04, Runner05"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "prices",
+                  "1.10, 2.20, 2.80, 3.40, 5.20"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I enable \"Luxbook DVP Fixed\" product settings",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Luxbook DVP Fixed",
+                  "offset": 10
+                }
+              ],
+              "location": "CreateEventSteps.java:90"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "Win"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "EW"
+                ],
+                "line": 17
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I place a single Racing \"Win\" bet on the runner \"Runner01\" for $5.50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Win",
+                  "offset": 25
+                },
+                {
+                  "val": "Runner01",
+                  "offset": 49
+                },
+                {
+                  "val": "5.50",
+                  "offset": 64
+                }
+              ],
+              "location": "BetAPISteps.java:148"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I place a single Racing \"Win\" bet on the runner \"Runner01\" for $3.50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Win",
+                  "offset": 25
+                },
+                {
+                  "val": "Runner01",
+                  "offset": 49
+                },
+                {
+                  "val": "3.50",
+                  "offset": 64
+                }
+              ],
+              "location": "BetAPISteps.java:148"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I place a single Racing \"Eachway\" bet on the runner \"Runner02\" for $5.50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Eachway",
+                  "offset": 25
+                },
+                {
+                  "val": "Runner02",
+                  "offset": 53
+                },
+                {
+                  "val": "5.50",
+                  "offset": 68
+                }
+              ],
+              "location": "BetAPISteps.java:148"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I place a single Racing \"Eachway\" bet on the runner \"Runner03\" for $2.50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Eachway",
+                  "offset": 25
+                },
+                {
+                  "val": "Runner03",
+                  "offset": 53
+                },
+                {
+                  "val": "2.50",
+                  "offset": 68
+                }
+              ],
+              "location": "BetAPISteps.java:148"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "customer balance after bet is decreased by $25.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25.00",
+                  "offset": 44
+                }
+              ],
+              "location": "BetAPISteps.java:302"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I result race with the runners and positions",
+            "match": {
+              "location": "CreateEventSteps.java:260"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Runner01",
+                  "1"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "Runner02",
+                  "2"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "Runner03",
+                  "3"
+                ],
+                "line": 28
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I settle race",
+            "match": {
+              "location": "CreateEventSteps.java:281"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "customer balance since last bet is increased by $9.90",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9.90",
+                  "offset": 49
+                }
+              ],
+              "location": "BetAPISteps.java:307"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Placing and Settling several Single bets on the same event",
+    "description": "",
+    "id": "placing-and-settling-several-single-bets-on-the-same-event",
+    "keyword": "Feature",
+    "uri": "redbook/FixedSingleBets.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@redbook"
+      },
+      {
+        "line": 1,
+        "name": "@several-single-bets"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "A new default customer with $100.00 balance is created and logged in API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100.00",
+                  "offset": 29
+                }
+              ],
+              "location": "CustomerSteps.java:74"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I am logged into WP UI and on Home Page",
+            "match": {
+              "location": "LoginSteps.java:33"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 51,
+        "name": "Multi bet with 2 events Horse Racing  \u003cMultitype\u003e",
+        "description": "",
+        "id": "placing-and-settling-multi-bets;multi-bet-with-2-events-\u003ccategory\u003e--\u003cmultitype\u003e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I enter specifics category \"Horse Racing\" and subcategory \"WOLVERHAMPTON\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Horse Racing",
+                  "offset": 28
+                },
+                {
+                  "val": "WOLVERHAMPTON",
+                  "offset": 59
+                }
+              ],
+              "location": "CreateEventSteps.java:39"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I create a default Racing event with details",
+            "match": {
+              "location": "CreateEventSteps.java:135"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "runners",
+                  "Runner01, Runner02, Runner03, Runner04, Runner05, Runner06, Runner07, Runner08"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "prices",
+                  "1.10, 2.20, 1.20, 2.40, 1.30, 2.60, 1.40, 2.80"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I enable \"Luxbook DVP Fixed\" product settings",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Luxbook DVP Fixed",
+                  "offset": 10
+                }
+              ],
+              "location": "CreateEventSteps.java:90"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Multi",
+                  "Win"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Multi",
+                  "EW"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "Win"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "Place"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "EW"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Win"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Place"
+                ],
+                "line": 20
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I enter market details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "enter",
+                  "offset": 2
+                }
+              ],
+              "location": "CreateEventSteps.java:99"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Market Status",
+                  "Live"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "E/W",
+                  "yes"
+                ],
+                "line": 23
+              },
+              {
+                "cells": [
+                  "Bets Allowed",
+                  "WIN Yes"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "Bets Allowed Place",
+                  "PLACE Fraction"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "Place Fraction",
+                  "1/4"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "No of Places",
+                  "3"
+                ],
+                "line": 27
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I enter specifics category \"Horse Racing\" and subcategory \"WOLVERHAMPTON\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Horse Racing",
+                  "offset": 28
+                },
+                {
+                  "val": "WOLVERHAMPTON",
+                  "offset": 59
+                }
+              ],
+              "location": "CreateEventSteps.java:39"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I create a default Racing event with details",
+            "match": {
+              "location": "CreateEventSteps.java:135"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "runners",
+                  "Runner11, Runner12, Runner13, Runner14, Runner15, Runner16, Runner17, Runner18"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "prices",
+                  "2.30, 4.30, 1.50, 3.46, 3.30, 2.90, 4.40, 5.85"
+                ],
+                "line": 31
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I enable \"Luxbook DVP Fixed\" product settings",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Luxbook DVP Fixed",
+                  "offset": 10
+                }
+              ],
+              "location": "CreateEventSteps.java:90"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Multi",
+                  "Win"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Multi",
+                  "EW"
+                ],
+                "line": 34
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "Win"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "Place"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Enable Single",
+                  "EW"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Win"
+                ],
+                "line": 38
+              },
+              {
+                "cells": [
+                  "Betting",
+                  "Display Price",
+                  "Place"
+                ],
+                "line": 39
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "I place a Redbook Multi Bet \"Double\" \"Win\" on the runners \"Runner01, Runner11\" for $3.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Double",
+                  "offset": 29
+                },
+                {
+                  "val": "Win",
+                  "offset": 38
+                },
+                {
+                  "val": "Runner01, Runner11",
+                  "offset": 59
+                },
+                {
+                  "val": "3.00",
+                  "offset": 84
+                }
+              ],
+              "location": "BetAPISteps.java:287"
+            },
+            "matchedColumns": [
+              2,
+              4,
+              5
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "customer balance after bet is decreased by $3.00",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3.00",
+                  "offset": 44
+                }
+              ],
+              "location": "BetAPISteps.java:302"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "I result/settle created event race with winners \"Runner01, Runner02, Runner03\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Runner01, Runner02, Runner03",
+                  "offset": 49
+                }
+              ],
+              "location": "CreateEventSteps.java:254"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "I result/settle created event race with winners \"Runner11, Runner12, Runner13\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Runner11, Runner12, Runner13",
+                  "offset": 49
+                }
+              ],
+              "location": "CreateEventSteps.java:254"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "customer balance since last bet is increased by $7.59",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7.59",
+                  "offset": 49
+                }
+              ],
+              "location": "BetAPISteps.java:307"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@redbook"
+          },
+          {
+            "line": 1,
+            "name": "@multi-bets"
+          }
+        ]
+      }
+    ],
+    "name": "Placing and Settling multi Bets",
+    "description": "",
+    "id": "placing-and-settling-multi-bets",
+    "keyword": "Feature",
+    "uri": "redbook/MultiBets.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@multi-bets"
+      },
+      {
+        "line": 1,
+        "name": "@redbook"
+      }
+    ]
+  }
+]

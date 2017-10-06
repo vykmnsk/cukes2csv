@@ -1,0 +1,15 @@
+On OSX
+
+> brew install python3
+> pip3 install virtualenv
+> git clone
+> cd into <project_dir>
+
+> virtualenv env
+> source env/bin/activate
+> which python
+--> should show local python path
+> python cukes2csv.py
+
+# when finished testing
+> deactivate

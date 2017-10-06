@@ -1,0 +1,6 @@
+env/
+env_old/
+notebook/
+__pycache__/
+.Python
+.cache
