@@ -4,18 +4,25 @@ import csv
 def extract_tests(cukes):
     tests = []
     for cuke in cukes:
+        steps = []
         for el in cuke['elements']:
+            if el['type'] == 'background':
+                for step in el['steps']:
+                    steps.append(f"{step['keyword']} {escape_quote(step['name'])}")
             if el['type'] == 'scenario':
                 test = {}
                 test['Summary'] = f"{el['name']}"
                 test['Assignee'] = 'Yuri'
                 test['Test Type'] = 'Automatic'
-                steps = []
                 for step in el['steps']:
-                    steps.append(f"{step['keyword']} {step['name']}")
+                    steps.append(f"{step['keyword']} {escape_quote(step['name'])}")
                 test['Description'] = '\n'.join(steps)
                 tests.append(test)
+                steps = []
     return tests
+
+def escape_quote(input):
+    return input.replace('"', "'")
 
 def write_csv(filename, dicts, delimiter=','):
     with open(filename, 'w') as f:
@@ -30,7 +37,7 @@ def header(dicts):
 
 def print_csv(dicts, delimiter=','):
     print(delimiter.join(header(dicts)))
-
+    print('\n') 
     for d in dicts:
         print(delimiter.join(d.values()))
         print('\n') 

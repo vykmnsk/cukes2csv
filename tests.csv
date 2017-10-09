@@ -1,86 +1,103 @@
 Summary;Assignee;Test Type;Description
-PA Feed: Create Horse Racing Event;Yuri;Automatic;"When  I feed ""PA"" RabbitMQ with Event message based on ""feeds/pa-hr-chester.json""
-Then  WagerPlayer receives the Event in ""Horse Racing""-""CHESTER"""
-PA Feed: Create Greyhound Racing Event;Yuri;Automatic;"When  I feed ""PA"" RabbitMQ with Event message based on ""feeds/pa-gh-hove.json""
-Then  WagerPlayer receives the Event in ""Greyhound Racing""-""HOVE"""
-WIFT Feed: Create Horse Racing Event;Yuri;Automatic;"When  I feed ""WIFT"" RabbitMQ with Event message based on ""feeds/wift-hr-bendigo.json""
-Then  WagerPlayer receives the Event in ""Horse Racing""-""BENDIGO"""
-Gearman Feed: event arrives;Yuri;Automatic;"When  I feed Gearman with Event message based on ""feeds/gearman-football-npl-women-vic.json""
-Then  WagerPlayer receives the Event in ""Football""-""NPL Women - Victoria""
-And  the received Event status is ""held"""
+PA Feed: Create Horse Racing Event;Yuri;Automatic;"Given  A new default customer with $0.00 balance is created and logged in API
+When  I feed 'PA' RabbitMQ with Event message based on 'feeds/pa-hr-chester.json'
+Then  WagerPlayer receives the Event in 'Horse Racing'-'CHESTER'"
+PA Feed: Create Greyhound Racing Event;Yuri;Automatic;"Given  A new default customer with $0.00 balance is created and logged in API
+When  I feed 'PA' RabbitMQ with Event message based on 'feeds/pa-gh-hove.json'
+Then  WagerPlayer receives the Event in 'Greyhound Racing'-'HOVE'"
+WIFT Feed: Create Horse Racing Event;Yuri;Automatic;"Given  A new default customer with $0.00 balance is created and logged in API
+When  I feed 'WIFT' RabbitMQ with Event message based on 'feeds/wift-hr-bendigo.json'
+Then  WagerPlayer receives the Event in 'Horse Racing'-'BENDIGO'"
+Gearman Feed: event arrives;Yuri;Automatic;"Given  A new default customer with $0.00 balance is created and logged in API
+When  I feed Gearman with Event message based on 'feeds/gearman-football-npl-women-vic.json'
+Then  WagerPlayer receives the Event in 'Football'-'NPL Women - Victoria'
+And  the received Event status is 'held'"
 API Login;Yuri;Automatic;Given  A new default customer with $100.00 balance is created and logged in API
 UI Login with valid credentials;Yuri;Automatic;"When  I login with valid username and password
 Then  homepage is displayed"
 UI Login with invalid credentials;Yuri;Automatic;"When  I login with invalid username and password
-Then  I see ""Invalid user"" message"
-Single Win Bet: Horse Racing | Luxbook DVP Fixed | Punter Win;Yuri;Automatic;"When  I enter specifics category ""Horse Racing"" and subcategory ""WOLVERHAMPTON""
+Then  I see 'Invalid user' message"
+Single Win Bet: Horse Racing | Luxbook DVP Fixed | Punter Win;Yuri;Automatic;"Given  A new default customer with $100.00 balance is created and logged in API
+And  I am logged into WP UI and on Home Page
+When  I enter specifics category 'Horse Racing' and subcategory 'WOLVERHAMPTON'
 And  I create a default Racing event with details
-And  I enable ""Luxbook DVP Fixed"" product settings
-And  I update fixed win prices ""4.20, 4.10""
-When  I place a single Racing ""Win"" bet on the runner ""Runner01"" for $2.50
+And  I enable 'Luxbook DVP Fixed' product settings
+And  I update fixed win prices '4.20, 4.10'
+When  I place a single Racing 'Win' bet on the runner 'Runner01' for $2.50
 Then  customer balance after bet is decreased by $2.50
-When  I result/settle created event race with winners ""Runner01, Runner02""
+When  I result/settle created event race with winners 'Runner01, Runner02'
 Then  customer balance since last bet is increased by $10.50"
-Single Win Bet: Horse Racing | Luxbook DVP Fixed | Punter Loss;Yuri;Automatic;"When  I enter specifics category ""Horse Racing"" and subcategory ""WOLVERHAMPTON""
+Single Win Bet: Horse Racing | Luxbook DVP Fixed | Punter Loss;Yuri;Automatic;"Given  A new default customer with $100.00 balance is created and logged in API
+And  I am logged into WP UI and on Home Page
+When  I enter specifics category 'Horse Racing' and subcategory 'WOLVERHAMPTON'
 And  I create a default Racing event with details
-And  I enable ""Luxbook DVP Fixed"" product settings
-And  I update fixed win prices ""4.20, 4.10""
-When  I place a single Racing ""Win"" bet on the runner ""Runner02"" for $3.00
+And  I enable 'Luxbook DVP Fixed' product settings
+And  I update fixed win prices '4.20, 4.10'
+When  I place a single Racing 'Win' bet on the runner 'Runner02' for $3.00
 Then  customer balance after bet is decreased by $3.00
-When  I result/settle created event race with winners ""Runner01, Runner02""
+When  I result/settle created event race with winners 'Runner01, Runner02'
 Then  customer balance since last bet is increased by $0.00"
-Single EachWay Bet: Horse Racing | Luxbook DVP Fixed | Punter Win finishing 1st;Yuri;Automatic;"When  I enter specifics category ""Horse Racing"" and subcategory ""WOLVERHAMPTON""
+Single EachWay Bet: Horse Racing | Luxbook DVP Fixed | Punter Win finishing 1st;Yuri;Automatic;"Given  A new default customer with $100.00 balance is created and logged in API
+And  I am logged into WP UI and on Home Page
+When  I enter specifics category 'Horse Racing' and subcategory 'WOLVERHAMPTON'
 And  I create a default Racing event with details
-And  I enable ""Luxbook DVP Fixed"" product settings
+And  I enable 'Luxbook DVP Fixed' product settings
 And  I enter market details
-And  I update fixed win prices ""10.00, 8.00, 7.00"" and place prices ""3.25, 2.75, 2.25""
-When  I place a single Racing ""EachWay"" bet on the runner ""Runner01"" for $2.50
+And  I update fixed win prices '10.00, 8.00, 7.00' and place prices '3.25, 2.75, 2.25'
+When  I place a single Racing 'EachWay' bet on the runner 'Runner01' for $2.50
 Then  customer balance after bet is decreased by $5.00
-When  I result/settle created event race with winners ""Runner01, Runner02, Runner03""
+When  I result/settle created event race with winners 'Runner01, Runner02, Runner03'
 Then  customer balance since last bet is increased by $33.13"
-Create Event: Horse Racing | WOLVERHAMPTON | 8 runners;Yuri;Automatic;"When  I enter specifics category ""Horse Racing"" and subcategory ""WOLVERHAMPTON""
+Create Event: Horse Racing | WOLVERHAMPTON | 8 runners;Yuri;Automatic;"Given  I am logged into WP UI and on Home Page
+When  I enter specifics category 'Horse Racing' and subcategory 'WOLVERHAMPTON'
 Then  I see New Event page is loaded
 When  I enter event details with 8 runners, current 'show time' and 'event date/time' in 30 minutes with data
 Then  I see Create Market page
-And  I can see success status with message ""Event Created""
+And  I can see success status with message 'Event Created'
 When  I enter random prices for racing event matching 8 participants
-Then  I can see success status with message ""Market Created""
-When  I update race number to ""1""
-And  I enable ""Luxbook DVP Fixed"" product settings
-And  I enable ""SP"" product settings
-And  I enable ""Forecast Fixed"" product settings
-And  I enable ""Tricast SP"" product settings
+Then  I can see success status with message 'Market Created'
+When  I update race number to '1'
+And  I enable 'Luxbook DVP Fixed' product settings
+And  I enable 'SP' product settings
+And  I enable 'Forecast Fixed' product settings
+And  I enable 'Tricast SP' product settings
 And  I enter market details
-Then  I can see success status with message ""Market display updated""
-And  event status is ""L"""
-Horse Race Exotic bets;Yuri;Automatic;"When  I enter specifics category ""Horse Racing"" and subcategory ""WOLVERHAMPTON""
+Then  I can see success status with message 'Market display updated'
+And  event status is 'L'"
+Horse Race Exotic bets;Yuri;Automatic;"Given  A new default customer with $100.00 balance is created and logged in API
+And  I am logged into WP UI and on Home Page
+When  I enter specifics category 'Horse Racing' and subcategory 'WOLVERHAMPTON'
 And  I create a default Racing event with details
-And  I enable ""Forecast SP"" product settings
-When  I place an exotic ""Exotic"" bet on the runners ""Runner01, Runner02"" for $2.00
+And  I enable 'Forecast SP' product settings
+When  I place an exotic 'Exotic' bet on the runners 'Runner01, Runner02' for $2.00
 Then  customer balance after bet is decreased by $2.00
-When  I result event with winners ""Runner01, Runner02""
-And  I settle race with Exotic prices ""5.20""
+When  I result event with winners 'Runner01, Runner02'
+And  I settle race with Exotic prices '5.20'
 Then  customer balance since last bet is increased by $10.40"
-Horse Race several Single bets;Yuri;Automatic;"When  I enter specifics category ""Horse Racing"" and subcategory ""WOLVERHAMPTON""
+Horse Race several Single bets;Yuri;Automatic;"Given  A new default customer with $100.00 balance is created and logged in API
+And  I am logged into WP UI and on Home Page
+When  I enter specifics category 'Horse Racing' and subcategory 'WOLVERHAMPTON'
 And  I create a default Racing event with details
-And  I enable ""Luxbook DVP Fixed"" product settings
-When  I place a single Racing ""Win"" bet on the runner ""Runner01"" for $5.50
-And  I place a single Racing ""Win"" bet on the runner ""Runner01"" for $3.50
-And  I place a single Racing ""Eachway"" bet on the runner ""Runner02"" for $5.50
-And  I place a single Racing ""Eachway"" bet on the runner ""Runner03"" for $2.50
+And  I enable 'Luxbook DVP Fixed' product settings
+When  I place a single Racing 'Win' bet on the runner 'Runner01' for $5.50
+And  I place a single Racing 'Win' bet on the runner 'Runner01' for $3.50
+And  I place a single Racing 'Eachway' bet on the runner 'Runner02' for $5.50
+And  I place a single Racing 'Eachway' bet on the runner 'Runner03' for $2.50
 Then  customer balance after bet is decreased by $25.00
 When  I result race with the runners and positions
 And  I settle race
 Then  customer balance since last bet is increased by $9.90"
-Multi bet with 2 events Horse Racing  <Multitype>;Yuri;Automatic;"When  I enter specifics category ""Horse Racing"" and subcategory ""WOLVERHAMPTON""
+Multi bet with 2 events Horse Racing  <Multitype>;Yuri;Automatic;"Given  A new default customer with $100.00 balance is created and logged in API
+And  I am logged into WP UI and on Home Page
+When  I enter specifics category 'Horse Racing' and subcategory 'WOLVERHAMPTON'
 And  I create a default Racing event with details
-And  I enable ""Luxbook DVP Fixed"" product settings
+And  I enable 'Luxbook DVP Fixed' product settings
 And  I enter market details
-When  I enter specifics category ""Horse Racing"" and subcategory ""WOLVERHAMPTON""
+When  I enter specifics category 'Horse Racing' and subcategory 'WOLVERHAMPTON'
 And  I create a default Racing event with details
-And  I enable ""Luxbook DVP Fixed"" product settings
-When  I place a Redbook Multi Bet ""Double"" ""Win"" on the runners ""Runner01, Runner11"" for $3.00
+And  I enable 'Luxbook DVP Fixed' product settings
+When  I place a Redbook Multi Bet 'Double' 'Win' on the runners 'Runner01, Runner11' for $3.00
 Then  customer balance after bet is decreased by $3.00
-When  I result/settle created event race with winners ""Runner01, Runner02, Runner03""
-When  I result/settle created event race with winners ""Runner11, Runner12, Runner13""
+When  I result/settle created event race with winners 'Runner01, Runner02, Runner03'
+When  I result/settle created event race with winners 'Runner11, Runner12, Runner13'
 Then  customer balance since last bet is increased by $7.59"
