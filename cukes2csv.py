@@ -11,14 +11,15 @@ def extract_tests(cukes):
                     steps.append(f"{step['keyword']} {step['name']}")
             if el['type'] == 'scenario':
                 test = {}
-                test['Summary'] = f"{el['name']}"
-                test['Issue Type'] = 'Test'
-                test['Automate'] = 'Required'
-                test['Labels'] = 'Automated'
+                test[('Summary', 1)] = f"{el['name']}"
+                test[('Issue Type', 1)] = 'Test'
+                test[('Automate', 1)] = 'Required'
+                test[('Labels', 1)] = 'Automated'
+                test[('Labels', 2)] = 'Sun_Deadheat_Testcase'
 
                 for step in el['steps']:
                     steps.append(f"{step['keyword']} {step['name']}")
-                test['Description'] = '\n'.join(steps)
+                test[('Description', 1)] = '\n'.join(steps)
                 tests.append(test)
                 steps = []
     return tests
@@ -32,7 +33,8 @@ def write_csv(filename, dicts, delimiter=','):
 
 def header(dicts):
     assert len(dicts) > 0
-    return dicts[0].keys()
+    headers = [ key[0] for key in dicts[0].keys()]
+    return headers
 
 def print_csv(dicts, delimiter=','):
     print(delimiter.join(header(dicts)))
