@@ -8,21 +8,20 @@ def extract_tests(cukes):
         for el in cuke['elements']:
             if el['type'] == 'background':
                 for step in el['steps']:
-                    steps.append(f"{step['keyword']} {escape_quote(step['name'])}")
+                    steps.append(f"{step['keyword']} {step['name']}")
             if el['type'] == 'scenario':
                 test = {}
                 test['Summary'] = f"{el['name']}"
-                test['Assignee'] = 'Yuri'
-                test['Test Type'] = 'Automatic'
+                test['Issue Type'] = 'Test'
+                test['Automate'] = 'Required'
+                test['Labels'] = 'Automated'
+
                 for step in el['steps']:
-                    steps.append(f"{step['keyword']} {escape_quote(step['name'])}")
+                    steps.append(f"{step['keyword']} {step['name']}")
                 test['Description'] = '\n'.join(steps)
                 tests.append(test)
                 steps = []
     return tests
-
-def escape_quote(input):
-    return input.replace('"', "'")
 
 def write_csv(filename, dicts, delimiter=','):
     with open(filename, 'w') as f:
